@@ -301,7 +301,8 @@ class MyServer(BaseHTTPRequestHandler):
                 <div class="col-8">
                     <form>
                         <div class="mb-3">
-                            <input name="name" type="text" class="form-control" id="exampleInputText1" placeholder="Имя">
+                            <input name="name" type="text" class="form-control" id="exampleInputText1"
+                                   placeholder="Имя">
                         </div>
                         <div class="mb-3">
                             <input name="email" type="email" class="form-control" id="exampleInputEmail1"
@@ -348,9 +349,70 @@ class MyServer(BaseHTTPRequestHandler):
                             </div>
                         </div>
                     </div>
-                    <!--                    <button type="button" class="btn btn-primary">Как купить?</button>-->
-                    <!--                    <button type="button" class="btn btn-primary">Как доставить?</button>-->
-                    <!--                    <button type="button" class="btn btn-primary">Какая гарантия?</button>-->
+                </div>
+                <div>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">№</th>
+                            <th scope="col">Название товара</th>
+                            <th scope="col">Цена за штуку</th>
+                            <th scope="col">Количество</th>
+                            <th scope="col">Итоговая сумма</th>
+                            <th scope="col">Статус заказа</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>кока-кола</td>
+                            <td>80</td>
+                            <td>2</td>
+                            <td>160</td>
+                            <td>
+                                <div class="alert alert-primary" role="alert">
+                                    новый
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>пепси-кола</td>
+                            <td>100</td>
+                            <td>3</td>
+                            <td>300</td>
+                            <td>
+                                <div class="alert alert-warning" role="alert">
+                                    обработка
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>фанта</td>
+                            <td>90</td>
+                            <td>6</td>
+                            <td>540</td>
+                            <td>
+                                <div class="alert alert-success" role="alert">
+                                    обработан
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>ред булл</td>
+                            <td>150</td>
+                            <td>4</td>
+                            <td>600</td>
+                            <td>
+                                <div class="alert alert-danger" role="alert">
+                                    отмена
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </main>
